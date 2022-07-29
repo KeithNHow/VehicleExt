@@ -1,0 +1,36 @@
+{
+  "id": "b62a32f4-5be7-4eb9-a8c8-db51c4d18e3d",
+  "name": "Vehicle Extension",
+  "publisher": "Keith How",
+  "version": "1.0.0.0",
+  "brief": "Business Central Development Extension Testing.",
+  "description": "Business Central Development Extension Testing.",
+  "privacyStatement": "",
+  "EULA": "",
+  "help": "",
+  "url": "",
+  "logo": "",
+  "dependencies": [
+    {
+      "id": "29f7dc76-12f4-4c00-843e-3d1be79676cb",
+      "name": "Vehicle",
+      "publisher": "Keith How",
+      "version": "1.0.0.2"
+    }
+  ],
+  "screenshots": [],
+  "platform": "1.0.0.0",
+  "application": "20.0.0.0",
+  "idRanges": [
+    {
+      "from": 50080,
+      "to": 50099
+    }
+  ],
+  "resourceExposurePolicy": {
+    "allowDebugging": true,
+    "allowDownloadingSource": false,
+    "includeSourceInSymbolFile": false
+  },
+  "runtime": "9.0"
+}
