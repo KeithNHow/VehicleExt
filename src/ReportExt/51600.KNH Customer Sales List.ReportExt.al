@@ -1,7 +1,7 @@
 /// <summary>
-/// Unknown KNH Customer Sales List (ID 50060) extends Record Customer - Top 10 List.
+/// Unknown KNH Customer Sales List (ID 51600) extends Record Customer - Top 10 List.
 /// </summary>
-reportextension 50080 "KNH Customer Sales List" extends "Customer - Top 10 List"
+reportextension 51600 "KNH Customer Sales List" extends "Customer - Top 10 List"
 {
     dataset
     {

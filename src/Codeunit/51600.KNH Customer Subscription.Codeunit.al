@@ -1,7 +1,7 @@
 /// <summary>
-/// Codeunit KNH Event Subscriptions (ID 50080).
+/// Codeunit KNH Event Subscriptions (ID 51600).
 /// </summary>
-codeunit 50080 "KNH Customer Subscription"
+codeunit 51600 "KNH Customer Subscription"
 {
     [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnAfterOnOpenPage', '', true, true)]
     local procedure OnAfterOnOpenPage(var Customer: Record Customer; xCustomer: Record Customer)
