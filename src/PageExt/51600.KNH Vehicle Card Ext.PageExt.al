@@ -7,9 +7,10 @@ pageextension 51600 "KNH Vehicle Card Ext" extends "KNH Vehicle Card"
     {
         addafter("New Cost")
         {
-            field("Current Value"; Rec."Current Value")
+            field("KNH Current Value"; Rec."Current Value")
             {
                 ApplicationArea = All;
+                Caption = 'Current Value';
                 ToolTip = 'Specifies the current value of the vehicle.';
             }
         }

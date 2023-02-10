@@ -18,26 +18,31 @@ page 51600 "KNH General Ledger Entry"
                 field("Entry No."; Rec."Entry No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'Entry No.';
                     ToolTip = 'Specifies the number of the entry, as assigned from the specified number series when the entry was created.';
                 }
                 field("G/L Account No."; Rec."G/L Account No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'G/L Account No.';
                     ToolTip = 'Specifies the number of the account that the entry has been posted to.';
                 }
                 field("G/L Account Name"; Rec."G/L Account Name")
                 {
                     ApplicationArea = All;
+                    Caption = 'G/L Account Name';
                     ToolTip = 'Specifies the name of the account that the entry has been posted to.';
                 }
                 field("Source No."; Rec."Source No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'Source No.';
                     ToolTip = 'Specifies the number of the source document that the entry originates from.';
                 }
                 field("Source Code"; Rec."Source Code")
                 {
                     ApplicationArea = All;
+                    Caption = 'Source Code';
                     ToolTip = 'Specifies the source code that specifies where the entry was created.';
                 }
                 field("Source Type"; Rec."Source Type")
@@ -48,6 +53,7 @@ page 51600 "KNH General Ledger Entry"
                 field("Vendor No."; Rec."Vendor No.")
                 {
                     ApplicationArea = All;
+                    Caption = 'Vendor No.';
                     ToolTip = 'Specifies the value of the Vendor No. field.';
                 }
             }
@@ -61,7 +67,7 @@ page 51600 "KNH General Ledger Entry"
             {
                 ApplicationArea = All;
                 Caption = 'GLE Page from Query';
-                Tooltip = 'GLE Page from Query';
+                ToolTip = 'GLE Page from Query';
                 Promoted = true;
                 PromotedCategory = Process;
                 PromotedIsBig = true;
@@ -71,7 +77,7 @@ page 51600 "KNH General Ledger Entry"
                 trigger OnAction()
                 var
                     GLETable: Record "KNH GLE Temp";
-                    GLEPage: Page "KNH GLE";
+                    GLEPage: Page "KNH GLE Temp";
                     GLEQuery: Query "KNH General Ledger Entries";
                 begin
                     GLETable.DeleteAll();

@@ -10,6 +10,6 @@ permissionset 51600 "KNH VehicleExt"
         tabledata "KNH GLE Temp" = RMID,
         codeunit "KNH Customer Subscription" = X,
         page "KNH General Ledger Entry" = X,
-        page "KNH GLE" = X,
+        page "KNH GLE Temp" = X,
         query "KNH General Ledger Entries" = X;
 }

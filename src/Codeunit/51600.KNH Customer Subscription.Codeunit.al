@@ -3,16 +3,6 @@
 /// </summary>
 codeunit 51600 "KNH Customer Subscription"
 {
-    [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnAfterOnOpenPage', '', true, true)]
-    local procedure OnAfterOnOpenPage(var Customer: Record Customer; xCustomer: Record Customer)
-    begin
-        If Customer."No." <> '' then begin
-            Customer.TestField(Name);
-            Customer.Name := UpperCase(Customer.Name);
-            Customer.Modify();
-        end;
-    end;
-
     [EventSubscriber(ObjectType::Table, Database::Customer, 'OnBeforeOnDelete', '', true, true)]
     local procedure OnBeforeOnDelete(var Customer: Record Customer; var IsHandled: Boolean)
     begin
@@ -24,6 +14,14 @@ codeunit 51600 "KNH Customer Subscription"
     begin
         Message('You are about to view the ledger related entry records.');
     end;
+
+    [EventSubscriber(ObjectType::Page, Page::"Customer Card", 'OnAfterOnOpenPage', '', true, true)]
+    local procedure OnAfterOnOpenPage(var Customer: Record Customer; xCustomer: Record Customer)
+    begin
+        if Customer."No." <> '' then begin
+            Customer.TestField(Name);
+            Customer.Name := UpperCase(Customer.Name);
+            Customer.Modify();
+        end;
+    end;
 }
-
-
