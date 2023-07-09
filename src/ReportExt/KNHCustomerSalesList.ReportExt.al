@@ -1,22 +1,26 @@
 /// <summary>
 /// Unknown KNH Customer Sales List (ID 51600) extends Record Customer - Top 10 List.
 /// </summary>
-reportextension 51600 "KNH Customer Sales List" extends "Customer - Top 10 List"
+reportextension 51600 "KNHCustomerSalesList" extends "Customer - Top 10 List"
 {
     dataset
     {
         add(Integer)
         {
             // add existing field from base table to dataset
-            column(Customer_GLN; Customer.GLN) { }
+            column(KNHCustomer_GLN; Customer.GLN)
+            {
+            }
             // add field from table extending Customer
-            column(Customer_MyField; Customer.MyField) { }
+            column(KNHCustomer_MyField; Customer."KNH MyField")
+            {
+            }
         }
 
         add(Customer)
         {
             // add a new field to the dataset
-            column(netWeight; netWeight)
+            column(KNHnetWeight; netWeight)
             {
             }
         }
@@ -41,7 +45,7 @@ reportextension 51600 "KNH Customer Sales List" extends "Customer - Top 10 List"
             addafter(Show)
             {
                 // add field from table extension to request page
-                field(Customer_MyField; Customer.MyField)
+                field(KNHCustomer_MyField; Customer."KNH MyField")
                 {
 
                 }

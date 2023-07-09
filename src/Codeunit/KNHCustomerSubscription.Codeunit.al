@@ -1,7 +1,7 @@
 /// <summary>
 /// Codeunit KNH Event Subscriptions (ID 51600).
 /// </summary>
-codeunit 51600 "KNH Customer Subscription"
+codeunit 51600 "KNHCustomerSubscription"
 {
     [EventSubscriber(ObjectType::Table, Database::Customer, 'OnBeforeOnDelete', '', true, true)]
     local procedure OnBeforeOnDelete(var Customer: Record Customer; var IsHandled: Boolean)

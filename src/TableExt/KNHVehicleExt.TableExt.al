@@ -1,11 +1,11 @@
 /// <summary>
 /// TableExtension KNH Vehicle Ext (ID 51600) extends Record KNH Vehicle.
 /// </summary>
-tableextension 51600 "KNH Vehicle Ext" extends "KNH Vehicle"
+tableextension 51600 "KNHVehicleExt" extends "KNHVehicle"
 {
     fields
     {
-        field(50080; "Current Value"; Decimal)
+        field(51600; "KNH Current Value"; Decimal)
         {
             Caption = 'Estimated Current Cost';
             DataClassification = ToBeClassified;

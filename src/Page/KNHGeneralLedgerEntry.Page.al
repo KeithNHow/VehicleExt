@@ -1,7 +1,7 @@
 /// <summary>
 /// Page KNH General Ledger Entry (ID 51600).
 /// </summary>
-page 51600 "KNH General Ledger Entry"
+page 51600 "KNHGeneralLedgerEntry"
 {
     ApplicationArea = All;
     Caption = 'KNH General Ledger Entry';
@@ -50,12 +50,6 @@ page 51600 "KNH General Ledger Entry"
                     ApplicationArea = All;
                     ToolTip = 'Specifies the source type that applies to the source number that is shown in the Source No. field.';
                 }
-                field("Vendor No."; Rec."Vendor No.")
-                {
-                    ApplicationArea = All;
-                    Caption = 'Vendor No.';
-                    ToolTip = 'Specifies the value of the Vendor No. field.';
-                }
             }
         }
     }
@@ -76,9 +70,9 @@ page 51600 "KNH General Ledger Entry"
 
                 trigger OnAction()
                 var
-                    GLETable: Record "KNH GLE Temp";
-                    GLEPage: Page "KNH GLE Temp";
-                    GLEQuery: Query "KNH General Ledger Entries";
+                    GLETable: Record "KNHGLETemp";
+                    GLEPage: Page "KNHGLETemp";
+                    GLEQuery: Query "KNHGeneralLedgerEntries";
                 begin
                     GLETable.DeleteAll();
                     GLEQuery.Open();
@@ -89,7 +83,6 @@ page 51600 "KNH General Ledger Entry"
                         GLETable."G/L Account Name" := GLEQuery.GLAccountName;
                         GLETable.Amount := GLEQuery.Amount;
                         GLETable."Source No." := GLEQuery.SourceNo;
-                        GLETable."Vendor No." := GLEQuery.VendorNo;
                         GLETable.Insert();
                     end;
                     GLEQuery.Close();

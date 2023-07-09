@@ -1,7 +1,7 @@
 /// <summary>
 /// Table KNH GLE Temp (ID 51600).
 /// </summary>
-table 51600 "KNH GLE Temp"
+table 51600 "KNHGLETemp"
 {
     Caption = 'KNH GLE Temp';
     DataClassification = ToBeClassified;

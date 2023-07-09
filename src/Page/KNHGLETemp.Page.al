@@ -1,12 +1,12 @@
 /// <summary>
 /// Page KNH GLE (ID 51601).
 /// </summary>
-page 51601 "KNH GLE Temp"
+page 51601 "KNHGLETemp"
 {
     ApplicationArea = Basic, Suite;
     Caption = 'KNH GLE';
     PageType = List;
-    SourceTable = "KNH GLE Temp";
+    SourceTable = "KNHGLETemp";
     UsageCategory = Lists;
 
     layout
