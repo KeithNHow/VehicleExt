@@ -13,4 +13,10 @@ tableextension 51602 "KNHGLEntry" extends "G/L Entry"
             Editable = false;
         }
     }
+    keys
+    {
+        key(Key20; "Source Code")
+        {
+        }
+    }
 }

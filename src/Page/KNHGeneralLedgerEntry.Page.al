@@ -96,6 +96,7 @@ page 51600 "KNHGeneralLedgerEntry"
         view(SourceType)
         {
             Caption = 'Source Type';
+            OrderBy = descending("Source Code");
             Filters = where("Source Type" = const(Vendor));
         }
     }
