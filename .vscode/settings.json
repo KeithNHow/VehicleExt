@@ -7,7 +7,7 @@
     ],
 
     "[al]": {
-        "editor.wordBasedSuggestions": false,
+        "editor.wordBasedSuggestions":"allDocuments",
         "editor.suggestSelection": "first",
         "editor.formatOnSave": true,
         "editor.codeLens": false,
@@ -30,5 +30,4 @@
     "CRS.FileNamePattern": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternExtensions": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
     "CRS.FileNamePatternPageCustomizations": "<ObjectName>.<ObjectTypeShortPascalCase>.al",
-    }
 }
