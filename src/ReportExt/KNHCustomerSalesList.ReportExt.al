@@ -1,7 +1,7 @@
 /// <summary>
 /// Unknown KNH Customer Sales List (ID 51600) extends Record Customer - Top 10 List.
 /// </summary>
-reportextension 51600 "KNHCustomerSalesList" extends "Customer - Top 10 List"
+reportextension 51600 KNHCustomerSalesList extends "Customer - Top 10 List"
 {
     dataset
     {
@@ -47,6 +47,8 @@ reportextension 51600 "KNHCustomerSalesList" extends "Customer - Top 10 List"
                 // add field from table extension to request page
                 field(KNHCustomer_MyField; Customer."KNH MyField")
                 {
+                    ToolTip = 'Specifies the value of the KNH MyField field.';
+                    ApplicationArea = All;
 
                 }
             }
@@ -72,6 +74,6 @@ reportextension 51600 "KNHCustomerSalesList" extends "Customer - Top 10 List"
     end;
 
     var
-        netWeight: Integer;
         weightInPounds: Boolean;
+        netWeight: Integer;
 }

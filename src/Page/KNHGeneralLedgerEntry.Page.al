@@ -1,7 +1,7 @@
 /// <summary>
 /// Page KNH General Ledger Entry (ID 51600).
 /// </summary>
-page 51600 "KNHGeneralLedgerEntry"
+page 51600 KNHGeneralLedgerEntry
 {
     ApplicationArea = All;
     Caption = 'KNH General Ledger Entry';
@@ -11,7 +11,7 @@ page 51600 "KNHGeneralLedgerEntry"
 
     layout
     {
-        area(content)
+        area(Content)
         {
             repeater(General)
             {
@@ -55,7 +55,7 @@ page 51600 "KNHGeneralLedgerEntry"
     }
     actions
     {
-        area(navigation)
+        area(Navigation)
         {
             action(GLEQuery)
             {
@@ -70,9 +70,9 @@ page 51600 "KNHGeneralLedgerEntry"
 
                 trigger OnAction()
                 var
-                    GLETable: Record "KNHGLETemp";
-                    GLEPage: Page "KNHGLETemp";
-                    GLEQuery: Query "KNHGeneralLedgerEntries";
+                    GLETable: Record KNHGLETemp;
+                    GLEPage: Page KNHGLETemp;
+                    GLEQuery: Query KNHGeneralLedgerEntries;
                 begin
                     GLETable.DeleteAll();
                     GLEQuery.Open();

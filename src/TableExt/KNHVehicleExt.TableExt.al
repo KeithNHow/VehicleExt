@@ -1,7 +1,7 @@
 /// <summary>
 /// TableExtension KNH Vehicle Ext (ID 51600) extends Record KNH Vehicle.
 /// </summary>
-tableextension 51600 "KNHVehicleExt" extends "KNHVehicle"
+tableextension 51600 KNHVehicleExt extends KNHVehicle
 {
     fields
     {

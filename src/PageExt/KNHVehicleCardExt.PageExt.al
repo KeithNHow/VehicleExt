@@ -1,7 +1,7 @@
 /// <summary>
 /// PageExtension KNH Vehicle Card (ID 51600) extends Record KNH Vehicle Card.
 /// </summary>
-pageextension 51600 "KNHVehicleCardExt" extends "KNHVehicleCard"
+pageextension 51600 KNHVehicleCardExt extends KNHVehicleCard
 {
     layout
     {

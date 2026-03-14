@@ -1,7 +1,7 @@
 /// <summary>
 /// TableExtension KNH GL Entry (ID 51602) extends Record G/L Entry.
 /// </summary>
-tableextension 51602 "KNHGLEntry" extends "G/L Entry"
+tableextension 51602 KNHGLEntry extends "G/L Entry"
 {
     fields
     {

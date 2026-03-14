@@ -1,7 +1,7 @@
 /// <summary>
 /// TableExtension KNH Customer (ID 51601) extends Record Customer.
 /// </summary>
-tableextension 51601 "KNHCustomer" extends Customer
+tableextension 51601 KNHCustomer extends Customer
 {
     fields
     {

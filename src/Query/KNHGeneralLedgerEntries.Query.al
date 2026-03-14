@@ -1,7 +1,7 @@
 /// <summary>
 /// Query KNH General Ledger Entries (ID 51600).
 /// </summary>
-query 51600 "KNHGeneralLedgerEntries"
+query 51600 KNHGeneralLedgerEntries
 {
     Caption = 'KNH General Ledger Entries';
     QueryType = Normal;
