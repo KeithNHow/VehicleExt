@@ -32,7 +32,8 @@
         "SortTableFields",
         "AddMissingParentheses",
         "RemoveBeginEnd",
-        "RemoveUnusedVariables"
+        "RemoveUnusedVariables",
+        "SortUsings"
     ],
 
     "CRS.ObjectNamePrefix": "KNH",
