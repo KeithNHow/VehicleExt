@@ -1,6 +1,8 @@
 /// <summary>
 /// TableExtension KNH Vehicle Ext (ID 51600) extends Record KNH Vehicle.
 /// </summary>
+namespace KNHVehicleExt;
+
 tableextension 51600 KNHVehicleExt extends KNHVehicle
 {
     fields
@@ -9,6 +11,7 @@ tableextension 51600 KNHVehicleExt extends KNHVehicle
         {
             Caption = 'Estimated Current Cost';
             DataClassification = ToBeClassified;
+            AllowInCustomizations = AsReadWrite;
         }
     }
 }

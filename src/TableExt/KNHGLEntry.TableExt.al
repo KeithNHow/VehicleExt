@@ -1,6 +1,10 @@
 /// <summary>
 /// TableExtension KNH GL Entry (ID 51602) extends Record G/L Entry.
 /// </summary>
+namespace KNHVehicleExt;
+using Microsoft.Finance.GeneralLedger.Ledger;
+using Microsoft.Purchases.Vendor;
+
 tableextension 51602 KNHGLEntry extends "G/L Entry"
 {
     fields

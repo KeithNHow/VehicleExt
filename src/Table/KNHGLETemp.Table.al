@@ -1,10 +1,13 @@
 /// <summary>
 /// Table KNH GLE Temp (ID 51600).
 /// </summary>
+namespace KNHVehicleExt;
+
 table 51600 KNHGLETemp
 {
     Caption = 'KNH GLE Temp';
     DataClassification = ToBeClassified;
+    AllowInCustomizations = AsReadWrite;
 
     fields
     {

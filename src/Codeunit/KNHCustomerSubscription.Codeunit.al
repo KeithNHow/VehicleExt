@@ -1,6 +1,10 @@
 /// <summary>
 /// Codeunit KNH Event Subscriptions (ID 51600).
 /// </summary>
+namespace KNHVehicleExt;
+using Microsoft.Sales.Customer;
+using Microsoft.Sales.Receivables;
+
 codeunit 51600 KNHCustomerSubscription
 {
     [EventSubscriber(ObjectType::Table, Database::Customer, 'OnBeforeOnDelete', '', true, true)]

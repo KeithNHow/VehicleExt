@@ -1,6 +1,9 @@
 /// <summary>
 /// TableExtension KNH Customer (ID 51601) extends Record Customer.
 /// </summary>
+namespace KNHVehicleExt;
+using Microsoft.Sales.Customer;
+
 tableextension 51601 KNHCustomer extends Customer
 {
     fields

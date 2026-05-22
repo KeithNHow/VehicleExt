@@ -1,6 +1,9 @@
 /// <summary>
 /// Page KNH General Ledger Entry (ID 51600).
 /// </summary>
+namespace KNHVehicleExt;
+using Microsoft.Finance.GeneralLedger.Ledger;
+
 page 51600 KNHGeneralLedgerEntry
 {
     ApplicationArea = All;

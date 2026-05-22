@@ -1,6 +1,8 @@
 /// <summary>
 /// Unknown KNH VehicleExt (ID 51600).
 /// </summary>
+namespace KNHVehicleExt;
+
 permissionset 51600 KNHVehicleExt
 {
     Assignable = true;

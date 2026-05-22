@@ -1,6 +1,8 @@
 /// <summary>
 /// Page KNH GLE (ID 51601).
 /// </summary>
+namespace KNHVehicleExt;
+
 page 51601 KNHGLETemp
 {
     ApplicationArea = Basic, Suite;
