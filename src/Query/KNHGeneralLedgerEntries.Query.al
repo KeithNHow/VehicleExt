@@ -2,7 +2,7 @@
 /// Query KNH General Ledger Entries (ID 51600).
 /// </summary>
 namespace KNHVehicleExt;
-using Microsoft.finance.GeneralLedger.Ledger;
+using Microsoft.Finance.GeneralLedger.Ledger;
 
 query 51600 KNHGeneralLedgerEntries
 {
