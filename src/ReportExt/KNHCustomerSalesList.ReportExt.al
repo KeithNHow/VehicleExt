@@ -1,6 +1,7 @@
 /// <summary>
 /// Unknown KNH Customer Sales List (ID 51600) extends Record Customer - Top 10 List.
 /// </summary>
+/*
 namespace knhVehicleExt;
 using Microsoft.Sales.Reports;
 
@@ -80,3 +81,4 @@ reportextension 51600 KNHCustomerSalesList extends "Customer - Top 10 List"
         weightInPounds: Boolean;
         netWeight: Integer;
 }
+*/

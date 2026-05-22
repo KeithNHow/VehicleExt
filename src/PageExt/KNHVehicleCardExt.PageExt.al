@@ -1,6 +1,7 @@
 /// <summary>
 /// PageExtension KNH Vehicle Card (ID 51600) extends Record KNH Vehicle Card.
 /// </summary>
+/*
 namespace KNHVehicleExt;
 
 pageextension 51600 KNHVehicleCardExt extends KNHVehicleCard
@@ -23,3 +24,4 @@ pageextension 51600 KNHVehicleCardExt extends KNHVehicleCard
         // Add changes to page actions here
     }
 }
+*/
